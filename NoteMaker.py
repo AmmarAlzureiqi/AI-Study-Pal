@@ -1,5 +1,5 @@
 # import os
-# import openai
+import openai
 # openai.api_key = os.getenv("OPENAI_API_KEY")
 # #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
 # notes = input("NOTES TO SUMMARIZE:")
