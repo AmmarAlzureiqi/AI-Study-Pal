@@ -2,17 +2,6 @@ import streamlit as st
 import os
 import openai
 from NoteMaker import generate_summary_and_questions
-from st_pages import Page, show_pages, add_page_title
-
-add_page_title() # By default this also adds indentation
-
-show_pages(
-    [
-        Page("streamlit_app.py", "Home", "🏠"),
-        Page("other_pages/page2.py", "Page 2", ":books:"),
-    ]
-)
-
 
 openai.api_key = st.secrets["API_KEY"]
 st.title("Notes Summary and Study Question Generator")
