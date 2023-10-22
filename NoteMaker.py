@@ -2,7 +2,8 @@ import streamlit as st
 import openai
 import os
 
-api_key = os.environ.get('API_KEY')
+#api_key = os.environ.get('API_KEY')
+api_key = st.secrets["API_KEY"]
 
 
 def generate_summary_and_questions(notes, generate_questions=True):
