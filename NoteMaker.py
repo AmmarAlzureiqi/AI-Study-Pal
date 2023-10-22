@@ -3,7 +3,8 @@ import os
 import openai
 
 
-openai.api_key = st.text_area("Enter API Key")
+#openai.api_key = st.text_area("Enter API Key")
+openai.api_key = st.secrets["API_KEY"]
 
 def generate_summary_and_questions(notes, generate_questions=True):
     prompt = f"Summarize the following notes: {notes}"
