@@ -9,7 +9,7 @@ openai.api_key = st.secrets["API_KEY"]
 def generate_summary_and_questions(notes, generate_questions=True):
     prompt = f"Summarize the following notes: {notes}"
     if not generate_questions:
-        prompt = f"CAN YOU GIVE ME A SUMMARY OF THESE NOTES {notes} THAT IS 33% THE LENGTH OF THE ORIGINAL NOTES and suggest helpful websites to learn more"
+        prompt = f"CAN YOU GIVE ME A SUMMARY OF THESE NOTES {notes} THAT IS 33% THE LENGTH OF THE ORIGINAL NOTES and include helpful 2 helpful websites"
     else:
         prompt = f"CAN YOU GIVE ME A SUMMARY OF THESE NOTES {notes} THAT IS 33% THE LENGTH OF THE ORIGINAL NOTES, AND CREATE 3-5 STUDY QUESTIONS"
     
