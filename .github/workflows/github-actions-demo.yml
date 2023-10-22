@@ -1,0 +1,12 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world action
+        with: # Set the secret as an input
+          apikey123: ${{ secrets.API_KEY }}
+        env: # Or as an environment variable
+          super_secret: ${{ secrets.SuperSecret }}
