@@ -16,8 +16,10 @@ with st.spinner("Loading..."):
             generated_text = generate_summary_and_questions(user_notes, generate_summary)
             st.subheader("Output:")
             st.write(generated_text)
+            st.success("Done!")
         else:
             st.warning("Please enter your notes before generating the output.")
+
 
 with st.sidebar:
     st.header("Header")
