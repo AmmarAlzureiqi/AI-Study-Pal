@@ -7,12 +7,13 @@ openai.api_key = st.secrets["API_KEY"]
 st.title("Notes Summary and Study Question Generator")
 user_notes = st.text_area("Enter your educational notes:")
 generate_summary = st.checkbox(f"Generate 5 Study Questions")
+generate_links = st.checkbox(f"Generate Helpful Resources")
 
 with st.spinner("Loading..."):
 # Generate summary or study questions when the user submits the notes
     if st.button("Generate"):
         if user_notes:
-            generated_text = generate_summary_and_questions(user_notes, generate_summary)
+            generated_text = generate_summary_and_questions(user_notes, generate_summary, generate_links)
             st.subheader("Output:")
             st.write(generated_text)
             st.success("Done!")
