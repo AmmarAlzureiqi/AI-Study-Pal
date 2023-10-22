@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 
-def generate_studyplan(notes, days):
+def generate_studyplan(notes, days=10):
     prompt = f"Can you make me a study plan for these I have {days} days: {notes}"
 
     response = openai.ChatCompletion.create(
