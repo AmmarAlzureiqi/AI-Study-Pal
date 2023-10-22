@@ -7,7 +7,7 @@ from NoteMaker import generate_summary_and_questions
 openai.api_key = st.secrets["API_KEY"]
 st.title("Educational Notes Summarizer and Study Question Generator")
 user_notes = st.text_area("Enter your educational notes:")
-generate_summary = st.checkbox(f"Generate Summary (check to generate 5 study questions)")
+generate_summary = st.checkbox(f"Generate 5 Study Questions")
 
 # Generate summary or study questions when the user submits the notes
 if st.button("Generate"):
