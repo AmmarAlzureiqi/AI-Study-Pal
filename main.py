@@ -18,4 +18,4 @@ if st.button("Generate"):
     else:
         st.warning("Please enter your notes before generating the output.")
 
-st.sidebar.['helloworld']
+st.sidebar.[helloworld]
