@@ -4,7 +4,7 @@ import NoteMaker
 
 
 openai.api_key = st.secrets["API_KEY"]
-st.title("Educational Notes Summarizer and Study Question Generator")
+st.title("Educational Notes Summarizer and Study Question Generator1")
 user_notes = st.text_area("Enter your educational notes:")
 generate_summary = st.checkbox(f"Generate Summary (check to generate 5 study questions)")
 
