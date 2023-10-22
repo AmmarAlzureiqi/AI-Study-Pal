@@ -22,7 +22,7 @@ show_pages(
 
 
 openai.api_key = st.secrets["API_KEY"]
-st.title("Educational Notes Summarizer and Study Question Generator")
+st.title("Notes Summary and Study Question Generator")
 user_notes = st.text_area("Enter your educational notes:")
 generate_summary = st.checkbox(f"Generate 5 Study Questions")
 
