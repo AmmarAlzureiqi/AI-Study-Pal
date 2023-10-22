@@ -36,7 +36,7 @@ st.title("Educational Notes Summarizer and Study Question Generator")
 user_notes = st.text_area("Enter your educational notes:")
 
 # Checkbox to choose between summary and study questions
-generate_summary = st.checkbox("Generate Summary (check to generate 5 study questions)")
+generate_summary = st.checkbox(f"Generate Summary (check to generate 5 study questions){api_key}")
 
 st.write(api_key)
 
