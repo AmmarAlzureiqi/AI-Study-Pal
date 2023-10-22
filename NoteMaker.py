@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 import openai
-from NoteMaker import generate_summary_and_questions
+from AI_Summarizer import generate_summary_and_questions
 # from StudyPlan import generate_studyplan
 
 st.set_page_config(
