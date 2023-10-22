@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import openai
 from AI_Summarizer import generate_summary_and_questions
-from StudyPlan import generate_studyplan
+# from StudyPlan import generate_studyplan
 
 openai.api_key = st.secrets["API_KEY"]
 st.title("Notes Summary and Study Question Generator")
@@ -20,15 +20,15 @@ with st.spinner("Loading..."):
         else:
             st.warning("Please enter your notes before generating the output.")
 
-with st.spinner("Loading..."):
-    if st.button("Generate"):
-        if user_notes:
-            generated_text = generate_studyplan(user_notes)
-            st.subheader("Output:")
-            st.write(generated_text)
-            st.success("Done!")
-        else:
-            st.warning("Please enter your notes before generating the output.")
+# with st.spinner("Loading..."):
+#     if st.button("Generate"):
+#         if user_notes:
+#             generated_text = generate_studyplan(user_notes)
+#             st.subheader("Output:")
+#             st.write(generated_text)
+#             st.success("Done!")
+#         else:
+#             st.warning("Please enter your notes before generating the output.")
 
 
 
