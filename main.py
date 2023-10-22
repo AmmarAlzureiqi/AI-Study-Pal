@@ -6,14 +6,10 @@ from st_pages import Page, show_pages, add_page_title
 
 add_page_title() # By default this also adds indentation
 
-
 show_pages(
     [
-        Section("My section", icon="🎈️"),
-        # Pages after a section will be indented
-        Page("Another page", icon="💪"),
-        # Unless you explicitly say in_section=False
-        Page("Not in a section", in_section=False)
+        Page("streamlit_app.py", "Home", "🏠"),
+        Page("other_pages/page2.py", "Page 2", ":books:"),
     ]
 )
 
