@@ -22,6 +22,6 @@ with st.sidebar:
     st.header("Header")
     st.subheader("subhead")
     st.write(10+20)
-    with st.spinner("Loading..."):
-        time.sleep(5)
-    st.success("Done!")
+with st.spinner("Loading..."):
+    time.sleep(5)
+st.success("Done!")
