@@ -1,8 +1,8 @@
 import streamlit as st
 import openai
 
-def generate_studyplan(notes):
-    prompt = f"Can you make me a study plan for these I have 2 weeks: {notes}"
+def generate_studyplan(notes, days):
+    prompt = f"Can you make me a study plan for these I have {days} days: {notes}"
 
     response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
@@ -17,16 +17,14 @@ def generate_studyplan(notes):
 
 
 openai.api_key = st.secrets["API_KEY"]
-st.title("Notes Summary and Study Question Generator")
-user_notes = st.text_area("Enter your educational notes:")
-generate_summary = st.checkbox(f"Generate 5 Study Questions")
-generate_links = st.checkbox(f"Suggest Helpful Resources")
-
+st.title("Study Plan Generator")
+days_left = st.text_area("How many days for the study plan?:")
+user_notes = st.text_area("Enter your notes:")
 
 with st.spinner("Loading..."):
     if st.button("Generate"):
         if user_notes:
-            generated_text = generate_studyplan(user_notes)
+            generated_text = generate_studyplan(user_notes, days_left)
             st.subheader("Output:")
             st.write(generated_text)
             st.success("Done!")
