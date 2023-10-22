@@ -17,3 +17,5 @@ if st.button("Generate"):
         st.write(generated_text)
     else:
         st.warning("Please enter your notes before generating the output.")
+
+st.sidebar.['helloworld']
