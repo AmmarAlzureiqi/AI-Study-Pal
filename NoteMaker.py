@@ -1,12 +1,11 @@
 import streamlit as st
-import os
 import openai
 from AI_Summarizer import generate_summary_and_questions
 # from StudyPlan import generate_studyplan
 
 st.set_page_config(
-    page_title="Hello",
-    page_icon="👋",
+    page_title="AINoteMaker",
+    page_icon="📓",
 )
 
 openai.api_key = st.secrets["API_KEY"]
