@@ -38,6 +38,8 @@ user_notes = st.text_area("Enter your educational notes:")
 # Checkbox to choose between summary and study questions
 generate_summary = st.checkbox("Generate Summary (check to generate 5 study questions)")
 
+st.write(api_key)
+
 # Generate summary or study questions when the user submits the notes
 if st.button("Generate"):
     if user_notes:
