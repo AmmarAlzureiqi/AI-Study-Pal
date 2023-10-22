@@ -41,6 +41,5 @@ with st.spinner("Loading..."):
 with st.sidebar:
     st.header("Header")
     st.subheader("subhead")
-    st.write(10+20)
 
 
