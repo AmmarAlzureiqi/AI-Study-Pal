@@ -18,4 +18,8 @@ if st.button("Generate"):
     else:
         st.warning("Please enter your notes before generating the output.")
 
-st.sidebar.[helloworld]
+with st.sidebar:
+    st.header("Header")
+    st.subheader("subhead")
+    st.write(10+20)
+st.header("hello")
