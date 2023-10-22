@@ -1,8 +1,9 @@
 import streamlit as st
-import openai
 import os
+import openai
 
-api_key = st.text_area("Enter API Key")
+
+openai.api_key = st.text_area("Enter API Key")
 
 def generate_summary_and_questions(notes, generate_questions=True):
     prompt = f"Summarize the following notes: {notes}"
@@ -35,7 +36,7 @@ st.title("Educational Notes Summarizer and Study Question Generator")
 user_notes = st.text_area("Enter your educational notes:")
 
 # Checkbox to choose between summary and study questions
-generate_summary = st.checkbox(f"Generate Summary (check to generate 5 study questions){api_key}")
+generate_summary = st.checkbox(f"Generate Summary (check to generate 5 study questions)")
 
 
 # Generate summary or study questions when the user submits the notes
