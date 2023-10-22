@@ -19,7 +19,7 @@ def generate_studyplan(notes, days):
 openai.api_key = st.secrets["API_KEY"]
 st.title("Study Plan Generator")
 days_left = st.text_area("How many days for the study plan?:")
-user_notes = st.text_area("Enter your notes:", height=30)
+user_notes = st.text_area("Enter your notes:", height=100)
 
 with st.spinner("Loading..."):
     if st.button("Generate"):
