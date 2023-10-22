@@ -18,7 +18,6 @@ with st.spinner("Loading..."):
             st.write(generated_text)
         else:
             st.warning("Please enter your notes before generating the output.")
-st.success("Done!")
 
 with st.sidebar:
     st.header("Header")
