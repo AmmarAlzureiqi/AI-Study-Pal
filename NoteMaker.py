@@ -2,12 +2,6 @@ import streamlit as st
 import openai
 import os
 
-api_key1 = os.environ.get('API_KEY')
-st.write(api_key1)
-api_key2 = os.environ.get('SECRET_KEY')
-st.write(api_key2)
-api_key = st.secrets["API_KEY"]  
-
 api_key = st.text_area("Enter API Key")
 
 def generate_summary_and_questions(notes, generate_questions=True):
