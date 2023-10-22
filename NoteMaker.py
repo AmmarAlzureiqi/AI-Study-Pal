@@ -3,7 +3,7 @@ import openai
 import os
 
 #api_key = os.environ.get('API_KEY')
-api_key = st.secrets["API_KEY"]
+api_key = st.secrets["API_KEY"]  
 
 
 def generate_summary_and_questions(notes, generate_questions=True):
@@ -39,7 +39,6 @@ user_notes = st.text_area("Enter your educational notes:")
 # Checkbox to choose between summary and study questions
 generate_summary = st.checkbox(f"Generate Summary (check to generate 5 study questions){api_key}")
 
-st.write(api_key)
 
 # Generate summary or study questions when the user submits the notes
 if st.button("Generate"):
