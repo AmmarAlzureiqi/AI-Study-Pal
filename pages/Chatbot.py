@@ -2,7 +2,7 @@ import openai
 import streamlit as st
 
 st.title("Your Personal Study Expert")
-topic = st.text_area("Enter Study Subject: Whatever subject you enter here, your study bot will become an expert in!")
+topic = st.text_area("Enter Study Subject: Whatever subject you enter here, your study bot will become an expert in!", height=20)
 
 
 
