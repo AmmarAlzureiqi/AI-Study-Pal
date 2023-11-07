@@ -18,3 +18,13 @@ with st.spinner("Loading..."):
             st.success("Done!")
         else:
             st.warning("Please enter your notes before generating the output.")
+
+# with st.spinner("Loading..."):
+#     if st.button("Generate"):
+#         if user_notes:
+#             generated_text = generate_studyplan(user_notes)
+#             st.subheader("Output:")
+#             st.write(generated_text)
+#             st.success("Done!")
+#         else:
+#             st.warning("Please enter your notes before generating the output.")
