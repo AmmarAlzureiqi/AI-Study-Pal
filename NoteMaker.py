@@ -1,12 +1,12 @@
 import streamlit as st
 import openai
 from AI_Summarizer import generate_summary_and_questions
-# from StudyPlan import generate_studyplan
 
-st.set_page_config(
-    page_title="AINoteMaker",
-    page_icon="📓",
-)
+st.set_page_config(page_title = "This is a Multipage WebApp", page_icon="📓") 
+st.title("This is the Home Page Geeks.") 
+st.sidebar.success("Select Any Page from here") 
+
+
 
 openai.api_key = st.secrets["API_KEY"]
 st.title("Notes Summary and Study Question Generator")
