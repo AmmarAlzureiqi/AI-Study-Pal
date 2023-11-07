@@ -10,7 +10,7 @@ st.sidebar.success("Select Any Page from here")
 show_pages(
     [
         Page("NoteMaker.py", "Home", "🏠"),
-        Page("pages/Chatbot.py", "Study Pal", ":books:"),
+        Page("pages/Chatbot.py", "Study Pal", "🤖"),
         Page("pages/Note_Maker.py", "Note Maker", ":books:"),
         Page("pages/StudyPlan.py", "Study Plan", ":books:"),
     ]
