@@ -1,7 +1,7 @@
 
 import streamlit as st
 import openai
-from AI_Summary import generate_summary_and_questions
+from AI_Summarizer import generate_summary_and_questions
 
 openai.api_key = st.secrets["API_KEY"]
 st.title("Notes Summary and Study Question Generator")
