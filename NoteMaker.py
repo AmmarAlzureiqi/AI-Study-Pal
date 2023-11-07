@@ -3,8 +3,8 @@ import openai
 from AI_Summarizer import generate_summary_and_questions
 from st_pages import Page, show_pages, add_page_title
 
-st.set_page_config(page_title = "All in one AI Study Assistant", page_icon="📓") 
-st.title("This is the Home Page Geeks.") 
+st.set_page_config(page_title = "AI Study Pal", page_icon="📓") 
+st.title("All in one AI Study Assistant!") 
 st.sidebar.success("Select Any Page from here") 
 
 show_pages(
