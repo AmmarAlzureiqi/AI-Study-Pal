@@ -62,7 +62,6 @@ topic = st.text_area("Enter Study Subject: (Feel free to add what grade or year 
 
 
 openai.api_key = st.secrets["API_KEY"]
-client = OpenAI()
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
@@ -90,7 +89,7 @@ if prompt := st.chat_input("Begin Chatting!"):
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
         full_response = ""
-        
+        client = OpenAI()
         for response in client.chat.completion.create(
             model=st.session_state["openai_model"],
             messages=[
