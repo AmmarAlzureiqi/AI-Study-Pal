@@ -1,5 +1,6 @@
 import streamlit as st
 from st_pages import Page, show_pages
+import openai
 
 st.set_page_config(page_title = "AI Study Pal", page_icon="📓") 
 st.title("All in One AI Study Assistant!") 

@@ -1,5 +1,8 @@
 import openai
 import streamlit as st
+from openai import OpenAI
+
+client = OpenAI()
 
 st.title("Your Personal Study Expert")
 
@@ -36,7 +39,7 @@ if prompt := st.chat_input("Begin Chatting!"):
         message_placeholder = st.empty()
         full_response = ""
         
-        for response in openai.ChatCompletion.create(
+        for response in client.chat.completion.create(
             model=st.session_state["openai_model"],
             messages=[
                 {"role": m["role"], "content": m["content"]}
