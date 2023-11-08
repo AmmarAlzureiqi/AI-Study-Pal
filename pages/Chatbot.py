@@ -2,6 +2,7 @@ import openai
 import streamlit as st
 
 st.title("Your Personal Study Expert")
+st.subheader(openai.__version__)
 
 st.subheader("Whatever subject you enter here, your study bot will become an expert in!")
 topic = st.text_area("Enter Study Subject: (Feel free to add what grade or year of study you are in as well)")
