@@ -23,8 +23,6 @@ if topic:
     st.session_state.messages.append({"role": "assistant", "content": initialprompt})
 
 for message in st.session_state.messages:
-    if message["role"] == "assistant" and message["content"] == initialprompt:
-        continue
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
