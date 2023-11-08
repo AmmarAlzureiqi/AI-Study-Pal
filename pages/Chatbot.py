@@ -3,11 +3,12 @@ import streamlit as st
 
 
 def createChat(subject = 'biology'):
+    tempstring = f"You are a {subject} expert"
 
     response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
-        {"role": "system", "content": f"You are a {subject} expert}"},
+        {"role": "system", "content": tempstring},
     ]
     )
 
