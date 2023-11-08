@@ -43,7 +43,6 @@ if prompt := st.chat_input("Begin Chatting!"):
             ],
             stream=True,
         ):
-            st.text(response.choices[0])
             full_response += response.choices[0].delta.get("content", "")
             message_placeholder.markdown(full_response + "▌")
         message_placeholder.markdown(full_response)
