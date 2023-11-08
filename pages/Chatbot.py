@@ -53,7 +53,7 @@ import openai
 import streamlit as st
 from openai import OpenAI
 
-client = OpenAI()
+
 
 st.title("Your Personal Study Expert")
 
@@ -62,6 +62,7 @@ topic = st.text_area("Enter Study Subject: (Feel free to add what grade or year 
 
 
 openai.api_key = st.secrets["API_KEY"]
+client = OpenAI()
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
