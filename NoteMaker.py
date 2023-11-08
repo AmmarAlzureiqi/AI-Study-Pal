@@ -8,6 +8,11 @@ st.sidebar.success("Select Any Page from here")
 st.subheader("Welcome to the All in one AI Study Assistant!")
 st.text('hello')
 
+st.subheader("There are currently three available tools to assist for your studies!")
+st.text('- Study Pal')
+st.text('- Note Maker')
+st.text('- Study Plan Generator')
+
 show_pages(
     [
         Page("NoteMaker.py", "Home", "🏠"),
