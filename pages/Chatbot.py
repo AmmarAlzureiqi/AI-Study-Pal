@@ -19,7 +19,7 @@ if "messages" not in st.session_state:
     
 
 if topic:
-    initialprompt = f"Hello, ChatGPT. I'd like to focus on {topic} and have you assist me in studying this field comprehensively. Please provide detailed explanations, summaries, and answer questions on various {topic} topics. Additionally,if I ask for clarification or further examples, kindly provide those as well. Let's delve deep into the world of {topic} to help me improve my understanding and knowledge in this subject."
+    initialprompt = f"Hello, I'd like to focus on {topic} and have you assist me in studying this field comprehensively. Please provide detailed explanations, summaries, and answer questions on various {topic} topics. Additionally,if I ask for clarification or further examples, kindly provide those as well. Let's delve deep into the world of {topic} to help me improve my understanding and knowledge in this subject."
     st.session_state.messages.append({"role": "assistant", "content": initialprompt})
 
 for message in st.session_state.messages:
