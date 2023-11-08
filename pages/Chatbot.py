@@ -1,6 +1,7 @@
 import openai
 import streamlit as st
 
+openai.api_key = st.secrets["API_KEY"]
 
 def createChat(subject = 'biology'):
     tempstring = f"You are a {subject} expert"
