@@ -1,10 +1,26 @@
 import openai
 import streamlit as st
 
+
+def createChat(subject = 'biology'):
+
+    response = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[
+        {"role": "system", "content": f"You are a {subject} expert}"},
+    ]
+    )
+
+    generated_text = response['choices'][0]['message']['content'] #response.choices[0].text.strip()
+    return generated_text
+
+
 st.title("Your Personal Study Expert")
 topic = st.text_area("Enter Study Subject: Whatever subject you enter here, your study bot will become an expert in!", 
                      value= 'ie. Biology', height=50)
 
+tempoutput = createChat(subject = topic)
+st.write(tempoutput)
 
 
 
