@@ -9,9 +9,9 @@ st.subheader("Welcome to the All in one AI Study Assistant!")
 st.markdown("Welcome to our AI-powered student support hub! Here, we've harnessed the power of artificial intelligence to assist you in your educational journey. Whether you need a study partner or quick note summaries, our AI study chatbot is here to help. Additionally, our note summarizer page provides concise, easy-to-understand summaries of your study materials, while our study plan generator can tailor a study plan just for you. Empower your learning experience with our suite of AI tools, designed to make your student life more efficient and effective.")
 
 st.subheader("Available tools to assist with your studies!")
-st.text('- Study Pal')
-st.text('- Note Maker')
-st.text('- Study Plan Generator')
+st.text('- Study Pal: An AI chat bot that emobodies the persona of an expert in your study subject')
+st.text('- Note Maker: Summarize your notes, generate study questions and gain additional study resources')
+st.text('- Study Plan Generator: Creates a study plan in order for you to structure your studies before an exam')
 
 show_pages(
     [
