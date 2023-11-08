@@ -4,7 +4,7 @@ import streamlit as st
 st.title("Your Personal Study Expert")
 
 st.subheader("Whatever subject you enter here, your study bot will become an expert in!")
-st.text('Feel free to add what grade or year of study you are in as well')
+st.text('Feel free to add what grade or year of study you are in as well!')
 topic = st.text_area("Enter Study Subject:")
 
 
