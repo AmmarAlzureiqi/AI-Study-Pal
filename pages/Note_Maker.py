@@ -4,7 +4,6 @@ import openai
 from AI_Summarizer import generate_summary_and_questions
 
 openai.api_key = st.secrets["API_KEY"]
-st.subheader(openai.__version__)
 st.title("Notes Summary and Study Question Generator")
 user_notes = st.text_area("Enter your educational notes:")
 generate_summary = st.checkbox(f"Generate 5 Study Questions")
