@@ -21,8 +21,8 @@ Welcome to our AI-powered student support hub! We've harnessed the power of arti
 
 Happy studying!
 
-<img src='https://github.com/AmmarAlzureiqi/AI-Study-Pal/assets/100096699/ec6aad00-190b-4616-b94d-67be5655ea3c' width='300' height='300'>
-<img src='https://github.com/AmmarAlzureiqi/AI-Study-Pal/assets/100096699/7f30db6e-6769-4871-b7cb-0f6d431c0763' width='300' height='300'>
+<img src='https://github.com/AmmarAlzureiqi/AI-Study-Pal/assets/100096699/ec6aad00-190b-4616-b94d-67be5655ea3c' width='600' height='300'>
+<img src='https://github.com/AmmarAlzureiqi/AI-Study-Pal/assets/100096699/7f30db6e-6769-4871-b7cb-0f6d431c0763' width='600' height='300'>
 <img src='' width='100' height='200'>
 <img src='' width='100' height='200'>
 
