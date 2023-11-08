@@ -1,2 +1,2 @@
-openai == 1.0.0
+openai == 0.28.1
 st_pages
