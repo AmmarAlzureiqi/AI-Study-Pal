@@ -1,6 +1,5 @@
 # AI Study Pal
 
-<<<<<<< HEAD
 https://aistudypal.streamlit.app/
 =======
 # All in One AI Study Assistant
@@ -28,7 +27,6 @@ Happy studying!
 <img src='https://github.com/AmmarAlzureiqi/AI-Study-Pal/assets/100096699/7f30db6e-6769-4871-b7cb-0f6d431c0763' width='600' height='300'>
 <img src='https://github.com/AmmarAlzureiqi/AI-Study-Pal/assets/100096699/0b227057-95ba-4062-ba42-9d165ad2704e' width='600' height='300'>
 <img src='https://github.com/AmmarAlzureiqi/AI-Study-Pal/assets/100096699/12c31078-39c6-4211-bb26-6e204929f56d' width='600' height='300'>
->>>>>>> dd91b8747e4cf99670279c28961f80e7fdbd3eaa
 
 
 
