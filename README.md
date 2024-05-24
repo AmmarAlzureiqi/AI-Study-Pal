@@ -1,8 +1,6 @@
 # AI Study Pal
 
-https://aistudypal.streamlit.app/
-=======
-# All in One AI Study Assistant
+## All in One AI Study Assistant
 
 Welcome to the All in One AI Study Assistant!
 
