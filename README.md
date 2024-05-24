@@ -5,7 +5,7 @@
 Welcome to the All in One AI Study Assistant!
 
 ## Link to Website
-https://mainpy-5s6az9nkusczdxb5f9vgio.streamlit.app/ 
+https://aistudypal.streamlit.app/
 
 ## About
 
